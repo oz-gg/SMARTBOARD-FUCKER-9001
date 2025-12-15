@@ -46,7 +46,6 @@ function onScanSuccess(decodedText) {
 
 function onScanError(_) {
 	output.textContent = "something went wrong";
-	alert(_);
 }
 
 if ("serviceWorker" in navigator) {
