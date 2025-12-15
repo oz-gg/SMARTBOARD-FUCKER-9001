@@ -1,3 +1,5 @@
+alert("app.js loaded");
+
 const KEY = "Sdal.325600+";
 
 const output = document.getElementById("output");
@@ -38,7 +40,9 @@ function decrypt(text) {
 function onScanSuccess(decodedText) {
 	qrScanner.stop();
 
-	output.textContent = decrypt(decodedText);
+	let oText = decrypt(decodedText);
+	output.textContent = oText;
+	alert("output: " + oText);
 }
 
 function onScanError(_) {
