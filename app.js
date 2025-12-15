@@ -39,6 +39,7 @@ function decrypt(text) {
 
 function onScanSuccess(decodedText) {
 	qrScanner.stop();
+	output.textContent = "something went right";
 
 	let oText = decrypt(decodedText);
 	output.textContent = oText;
