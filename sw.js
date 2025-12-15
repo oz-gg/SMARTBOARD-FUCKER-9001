@@ -1,4 +1,4 @@
-const CACHE_NAME = "qr-md5-v2";
+const CACHE_NAME = "qr-md5-v3";
 const FILES = [
 	"./",
 	"./index.html",
