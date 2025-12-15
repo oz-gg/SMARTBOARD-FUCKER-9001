@@ -19,7 +19,7 @@ startBtn.addEventListener("click", () => {
 });
 
 function decrypt(text) {
-	let hash = CryptoJS.MD5(text + password + "t%342!!vgj..")
+	let hash = CryptoJS.MD5(text + KEY + "t%342!!vgj..")
 		.toString(CryptoJS.enc.Hex);
 
 	hash = hash.substring(0, 4);
