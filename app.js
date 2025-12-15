@@ -41,7 +41,9 @@ function onScanSuccess(decodedText) {
 	output.textContent = decrypt(decodedText);
 }
 
-function onScanError(_) {}
+function onScanError(_) {
+	output.textContent = "something went wrong";
+}
 
 if ("serviceWorker" in navigator) {
 	navigator.serviceWorker.register("sw.js");
