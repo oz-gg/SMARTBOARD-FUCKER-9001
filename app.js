@@ -38,7 +38,7 @@ function decrypt(text) {
 function onScanSuccess(decodedText) {
 	qrScanner.stop();
 
-	output.text = decrypt(decodedText);
+	output.textContent = decrypt(decodedText);
 }
 
 function onScanError(_) {}
