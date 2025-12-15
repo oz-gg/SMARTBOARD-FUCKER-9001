@@ -44,9 +44,7 @@ function onScanSuccess(decodedText) {
 	alert(oText);
 }
 
-function onScanError(_) {
-	output.textContent = "something went wrong";
-}
+function onScanError(_) {}
 
 if ("serviceWorker" in navigator) {
 	navigator.serviceWorker.register("sw.js");
