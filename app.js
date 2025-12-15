@@ -1,5 +1,3 @@
-alert("app.js loaded");
-
 const KEY = "Sdal.325600+";
 
 const output = document.getElementById("output");
